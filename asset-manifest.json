@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/egitimuygulamasi/static/css/main.d416301a.chunk.css",
+    "main.js": "/egitimuygulamasi/static/js/main.5a119d9f.chunk.js",
+    "main.js.map": "/egitimuygulamasi/static/js/main.5a119d9f.chunk.js.map",
+    "runtime-main.js": "/egitimuygulamasi/static/js/runtime-main.247de491.js",
+    "runtime-main.js.map": "/egitimuygulamasi/static/js/runtime-main.247de491.js.map",
+    "static/js/2.f20b91f6.chunk.js": "/egitimuygulamasi/static/js/2.f20b91f6.chunk.js",
+    "static/js/2.f20b91f6.chunk.js.map": "/egitimuygulamasi/static/js/2.f20b91f6.chunk.js.map",
+    "index.html": "/egitimuygulamasi/index.html",
+    "static/css/main.d416301a.chunk.css.map": "/egitimuygulamasi/static/css/main.d416301a.chunk.css.map",
+    "static/js/2.f20b91f6.chunk.js.LICENSE.txt": "/egitimuygulamasi/static/js/2.f20b91f6.chunk.js.LICENSE.txt",
+    "static/media/aglayanyuz2.316b4fbd.png": "/egitimuygulamasi/static/media/aglayanyuz2.316b4fbd.png",
+    "static/media/flushed.4041a589.png": "/egitimuygulamasi/static/media/flushed.4041a589.png",
+    "static/media/growingkalp.33393134.png": "/egitimuygulamasi/static/media/growingkalp.33393134.png",
+    "static/media/happy2.ea6328b3.png": "/egitimuygulamasi/static/media/happy2.ea6328b3.png",
+    "static/media/hearteyes.398b973b.png": "/egitimuygulamasi/static/media/hearteyes.398b973b.png",
+    "static/media/hug.35e9d352.png": "/egitimuygulamasi/static/media/hug.35e9d352.png",
+    "static/media/ikikalp.ba8afdda.png": "/egitimuygulamasi/static/media/ikikalp.ba8afdda.png",
+    "static/media/logo.db36153e.svg": "/egitimuygulamasi/static/media/logo.db36153e.svg",
+    "static/media/parlayankalp.a6274e75.png": "/egitimuygulamasi/static/media/parlayankalp.a6274e75.png",
+    "static/media/perculus.8cbc1101.png": "/egitimuygulamasi/static/media/perculus.8cbc1101.png",
+    "static/media/rollover msg.0eb18d42.mp3": "/egitimuygulamasi/static/media/rollover msg.0eb18d42.mp3",
+    "static/media/rollover.859cf8a4.mp3": "/egitimuygulamasi/static/media/rollover.859cf8a4.mp3",
+    "static/media/sunglasses.5e815b1b.png": "/egitimuygulamasi/static/media/sunglasses.5e815b1b.png",
+    "static/media/think.6b45ae07.png": "/egitimuygulamasi/static/media/think.6b45ae07.png",
+    "static/media/thumbsup.49f20515.png": "/egitimuygulamasi/static/media/thumbsup.49f20515.png",
+    "static/media/withoutmouth.beaffb1b.png": "/egitimuygulamasi/static/media/withoutmouth.beaffb1b.png",
+    "static/media/woman.b7a29057.png": "/egitimuygulamasi/static/media/woman.b7a29057.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.247de491.js",
+    "static/js/2.f20b91f6.chunk.js",
+    "static/css/main.d416301a.chunk.css",
+    "static/js/main.5a119d9f.chunk.js"
+  ]
+}
