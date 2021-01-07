@@ -1,39 +1,601 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color:#f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.App_body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #1b1b1b;
+  z-index: 1;
+}
+
+.App_body .img{
+  max-width: 8vw;
+  animation: bounce 1s infinite alternate-reverse;
+}
+
+@keyframes bounce{
+  from{
+    transform: scale(1);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+
+
+.App_chat{
+  background-color:#fff;
+  z-index: 1;
+  width: 40vw;
+  height: 75vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+.App_ders{
+ 
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid lightgray;
+  color: #1b1b1b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+  align-items: center;
+}
+.App_ders .avatar{
+  margin: 10px;
+}
+.App_ders .svg{
+  margin: 10px;
+  font-size: 30px;
+}
+.App_ders p{
+  flex: 0.5;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.App_chatarea{
+  flex: 0.9;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+.App_msg{
+  background: #fff;
+  border-top: 1px solid lightgray;
+
+  flex: 0.12;
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.App_msg input{
+  flex: 1;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+  background: #fff;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.App_msg svg{
+  flex: 0.1;
+  color: #1b1b1b;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+
+
+
+@keyframes hover2{
+  from{
+    transform: scale(0);
   }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
+  to{
+    transform: scale(1);
   }
 }
+
+.sender{
+  background: rgba(0,0,0,0.1);
+  max-width: 20vw;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+.sender h5{
+  padding-top: 10px;
+  
+}
+.sender p{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.sender span{
+  position: absolute;
+  top: 10px;
+  right: 1vw;
+}
+
+.reciev{
+  background: #7DC24F;
+  
+
+}
+
+.custom-shape-divider-top-1609874504 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(-1%, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.emojiheader{
+  
+  width: 100%;
+  background: white;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.emojiheader a{
+  margin: 10px;
+  border-bottom: 2px solid transparent;
+
+}
+.emojiheader a svg{
+  font-size: 20px;
+  color: gray!important;
+}
+
+.emojiheader a:hover{
+  border-bottom: 2px solid #1b1b1b;
+}
+.emojiheader a svg:hover{
+
+  color: #1b1b1b!important;
+}
+
+
+
+
+.emojipicker{
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height:300px;
+  max-height: 300px;
+
+  border-radius: 10px;
+  border: 1px solid gray;
+  
+  
+  bottom: 2vw;
+
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.emojipicker2{
+  flex: 1;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+.emojipicker h4{
+  text-align: center;
+  margin-left: 5px;
+  padding-left: 10px;
+  font-weight: 100;
+}
+.emojipickerarea{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.emojipicker span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.emojipicker span:hover{
+  background: #d3d3d3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.emojipicker span img{
+
+  max-width: 2vw;
+}
+
+
+.App_resp{
+  position: relative;
+}
+
+
+.sessiondiv{
+  background: #fff;
+  width: 95vw;
+  border: 1px solid lightgray;
+  height:95vh;
+  display: flex;
+  border-radius: 10px;
+
+
+}
+
+.sessiondiv .div{
+  flex: 1;
+}
+
+.session_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+}
+.session_header .span2{
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.session_header .span2 span{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.session_header .span2 span svg{
+ font-size: 20px;
+ margin: 10px;
+  
+
+}
+
+.sessionlogo{
+  flex: 1;
+}
+.session_header h4{
+  flex: 1;
+}
+.session_header img{
+  width: 3vw;
+  margin: 10px;
+  height: 5vh;
+
+}
+.sessionmid{
+  flex: 0.75;
+  display: flex;
+  border-right: 1px solid lightgray;
+  flex-direction: column;
+}
+.sessionvideo{
+  flex: 1;
+}
+.sessionvideo iframe{
+  width:100%;
+  height: 100%;
+ 
+}
+
+.session_sozisteme{
+  display: flex;
+  flex-direction: row;
+}
+
+.session_sozisteme span{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.session_sozisteme span p{
+  margin: 10px;
+
+}
+
+.session_sozisteme2 {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.session_chatter{
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.konusmaciheader{
+  flex: 0.15;
+  background: #292929;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  color: gray;
+  font-size:30px;
+  border-top-right-radius: 10px;
+}
+.konusmaciheader svg{
+  margin: 5px;
+}
+.rtcvideo{
+  flex: 0.5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f;
+ 
+  object-fit: fill;
+  color: white;
+  flex-direction: column;
+}
+
+
+.rtcchat{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rtcchat_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid lightgray;
+}
+.rtcchat_header span{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+.rtcchat_span_aktif{
+  background: #d3d3d3;
+  color:black!important;
+}
+
+
+.rtcchat_header span:hover{
+  background: #d3d3d3;
+  color:black;
+  cursor: pointer;
+}
+
+.rtcchat_header svg{
+  padding: 10px;
+}
+.rtcchat_mid{
+  flex: 1;
+  display: flex;
+}
+.rtcchat_sidebar{
+  background: white;
+ flex: 0.2;
+ display: flex;
+ flex-direction: column;
+ justify-content: top;
+ align-items: center;
+}
+.rtcchat_sidebar .rtcchat_g{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: black;
+  color: white;
+  
+ 
+}
+
+.rtcchat_sidebar svg{
+  margin-top:10px;
+  font-size: 30px;
+  color: gray;
+}
+
+.rtcchat_sidebar .rtcchat_g span{
+  border: 1px solid #0082fb;
+  padding: 10px;
+  border-radius: 10px;
+  
+ 
+}
+
+.rtcchatinput{
+  flex: 0.13;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items:center;
+  background: white;
+  padding: 10px;
+}
+
+.rtcchatinput input{
+  flex: 1;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: 0;
+  background: #fff;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+.rtcchatinput svg{
+  flex: 0.1;
+  color: #1b1b1b;
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+.rtcchat_chatzone{
+  flex:1
+}
+
+.katilimcilar{
+  
+  display: flex;
+  flex-direction: column;
+}
+.katilimcilar_header{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #d3d3d3;
+}
+.katilimcilar_header2{
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+}
+.katilimcilar_header span{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 20px;
+  align-items: center;
+  padding: 2px;
+  background: white;
+  border-radius: 10px;
+}
+.katilimcilar_header svg{
+  margin: 10px;
+  padding: 10px;
+  color: #0082fb;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.katilimcilar_mid{
+  flex: 1;
+
+}
+.katilimcilar_item{
+  display: flex;
+ 
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid lightgray;
+}
+.katilimcilar_name{
+  flex: 0.9;
+  display:flex;
+  align-items: center;
+}
+.katilimcilar_name svg{
+  margin: 10px;
+  font-size: 30px;
+}
+.katilimcilar_roundbadge{
+  height: 10px;
+  width: 10px;
+
+  border-radius: 50%;
+  display: inline-block;
+
+  background: #7DC24F;
+  
+  text-align: center;
+}
+
+.katilimcilar_yetki{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+.katilimcilar_item:hover{
+  background: #d3d3d3;
+  cursor: pointer;
+}
+
+.katilimcilar_item span{
+  margin:5px;
+}
+.boldusername{
+  font-weight: bold;
+}
+.normalusername{
+  font-weight: 400;
+}
+
